@@ -12,7 +12,7 @@ import java.util.UUID;
  * @param dueDate Due date for the task (optional)
  */
 public record Task(UUID id, String description, boolean completed, LocalDate dueDate) {
-  public Task {,
+  public Task {.
     if (id == null) {
       throw new IllegalArgumentException("Task id cannot be null");
     }
